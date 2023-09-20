@@ -1,14 +1,3 @@
-/**
-=========================================================
-* DataLake Frontend - v0.1.0
-=========================================================
-
-* Copyright 2023 Arqmind (https://www.arqmind.com)
-
- =========================================================
-
-*/
-
 // @mui material components
 import Drawer from "@mui/material/Drawer";
 import { styled } from "@mui/material/styles";
