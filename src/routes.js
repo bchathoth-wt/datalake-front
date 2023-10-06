@@ -227,12 +227,6 @@ const routes = [
         route: "/applications/data-tables",
         component: <DataTables />,
       },
-      {
-        name: "Calendar",
-        key: "calendar",
-        route: "/applications/calendar",
-        component: <Calendar />,
-      },
     ],
   },
   {
