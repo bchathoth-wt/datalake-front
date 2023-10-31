@@ -97,18 +97,27 @@ const routes = [
     key: "dashboards",
     icon: <Icon fontSize="medium">dashboard</Icon>,
     collapse: [
-      {
+      /*{
         name: "Analytics",
         key: "analytics",
         route: "/dashboards/analytics",
         component: <Analytics />,
       },
+      */
+      {
+        name: "Platform",
+        key: "platform",
+        route: "/dashboards/platform",
+        component: <Platform />,
+      },
+      /*
       {
         name: "Sales",
         key: "sales",
         route: "/dashboards/sales",
         component: <Sales />,
       },
+      */
     ],
   },
   { type: "title", title: "Pages", key: "title-pages" },
@@ -427,8 +436,8 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Ecommerce",
-    key: "ecommerce",
+    name: "Extras",
+    key: "extras",
     icon: <Icon fontSize="medium">shopping_basket</Icon>,
     collapse: [
       {

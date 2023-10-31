@@ -44,7 +44,7 @@ import booking2 from "assets/images/products/product-2-min.jpg";
 import booking3 from "assets/images/products/product-3-min.jpg";
 
 function Platform() {
-  const { sales, tasks } = reportsLineChartData;
+  const { tasks_completed, tasks } = reportsLineChartData;
 
   // Action buttons for the BookingCard
   const actionButtons = (
@@ -80,7 +80,7 @@ function Platform() {
               <MDBox mb={3}>
                 <ReportsBarChart
                   color="info"
-                  title="website views"
+                  title="Tasks completed today"
                   description="Last Campaign Performance"
                   date="campaign sent 2 days ago"
                   chart={reportsBarChartData}
@@ -91,14 +91,14 @@ function Platform() {
               <MDBox mb={3}>
                 <ReportsLineChart
                   color="success"
-                  title="daily sales"
+                  title="Tasks Completed Last 9 months"
                   description={
                     <>
-                      (<strong>+15%</strong>) increase in today sales.
+                      (<strong>+15%</strong>) increase in today runs.
                     </>
                   }
-                  date="updated 4 min ago"
-                  chart={sales}
+                  date="updated 5 min ago"
+                  chart={tasks_completed}
                 />
               </MDBox>
             </Grid>
@@ -106,8 +106,8 @@ function Platform() {
               <MDBox mb={3}>
                 <ReportsLineChart
                   color="dark"
-                  title="completed tasks"
-                  description="Last Campaign Performance"
+                  title="Failed tasks"
+                  description="Last 9 months"
                   date="just updated"
                   chart={tasks}
                 />
@@ -121,8 +121,8 @@ function Platform() {
               <MDBox mb={1.5}>
                 <ComplexStatisticsCard
                   color="dark"
-                  icon="weekend"
-                  title="Bookings"
+                  icon="science"
+                  title="New Experiments"
                   count={281}
                   percentage={{
                     color: "success",
@@ -136,8 +136,8 @@ function Platform() {
               <MDBox mb={1.5}>
                 <ComplexStatisticsCard
                   icon="leaderboard"
-                  title="Today's Users"
-                  count="2,300"
+                  title="Total Runs"
+                  count="568"
                   percentage={{
                     color: "success",
                     amount: "+3%",
@@ -151,11 +151,11 @@ function Platform() {
                 <ComplexStatisticsCard
                   color="success"
                   icon="store"
-                  title="Revenue"
-                  count="34k"
+                  title="Cost $"
+                  count="4k"
                   percentage={{
                     color: "success",
-                    amount: "+1%",
+                    amount: "+5%",
                     label: "than yesterday",
                   }}
                 />
@@ -166,53 +166,13 @@ function Platform() {
                 <ComplexStatisticsCard
                   color="primary"
                   icon="person_add"
-                  title="Followers"
+                  title="Users"
                   count="+91"
                   percentage={{
                     color: "success",
                     amount: "",
                     label: "Just updated",
                   }}
-                />
-              </MDBox>
-            </Grid>
-          </Grid>
-        </MDBox>
-        <MDBox mt={2}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} md={6} lg={4}>
-              <MDBox mt={3}>
-                <BookingCard
-                  image={booking1}
-                  title="Cozy 5 Stars Apartment"
-                  description='The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona.'
-                  price="$899/night"
-                  location="Barcelona, Spain"
-                  action={actionButtons}
-                />
-              </MDBox>
-            </Grid>
-            <Grid item xs={12} md={6} lg={4}>
-              <MDBox mt={3}>
-                <BookingCard
-                  image={booking2}
-                  title="Office Studio"
-                  description='The place is close to Metro Station and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the night life in London, UK.'
-                  price="$1.119/night"
-                  location="London, UK"
-                  action={actionButtons}
-                />
-              </MDBox>
-            </Grid>
-            <Grid item xs={12} md={6} lg={4}>
-              <MDBox mt={3}>
-                <BookingCard
-                  image={booking3}
-                  title="Beautiful Castle"
-                  description='The place is close to Metro Station and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Milan.'
-                  price="$459/night"
-                  location="Milan, Italy"
-                  action={actionButtons}
                 />
               </MDBox>
             </Grid>
