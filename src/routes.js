@@ -104,6 +104,7 @@ const routes = [
         component: <Analytics />,
       },
       */
+
       {
         name: "Platform",
         key: "platform",
