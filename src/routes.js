@@ -97,7 +97,8 @@ const routes = [
     key: "dashboards",
     icon: <Icon fontSize="medium">dashboard</Icon>,
     collapse: [
-      /*{
+      /*
+      {
         name: "Analytics",
         key: "analytics",
         route: "/dashboards/analytics",
